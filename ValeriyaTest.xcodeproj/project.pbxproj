@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		646709FF2B91F9B100A13080 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646709FE2B91F9B100A13080 /* AppDelegate.swift */; };
 		64670A012B91F9B100A13080 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64670A002B91F9B100A13080 /* SceneDelegate.swift */; };
-		64670A032B91F9B100A13080 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64670A022B91F9B100A13080 /* ViewController.swift */; };
-		64670A062B91F9B100A13080 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64670A042B91F9B100A13080 /* Main.storyboard */; };
+		64670A032B91F9B100A13080 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64670A022B91F9B100A13080 /* TableViewController.swift */; };
 		64670A082B91F9B300A13080 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64670A072B91F9B300A13080 /* Assets.xcassets */; };
 		64670A0B2B91F9B300A13080 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64670A092B91F9B300A13080 /* LaunchScreen.storyboard */; };
+		64670A142B91FC4800A13080 /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = 64670A132B91FC4800A13080 /* products.json */; };
+		64670A1D2B91FD5600A13080 /* ModelProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64670A1C2B91FD5600A13080 /* ModelProducts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		646709FB2B91F9B100A13080 /* ValeriyaTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ValeriyaTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		646709FE2B91F9B100A13080 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64670A002B91F9B100A13080 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		64670A022B91F9B100A13080 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		64670A052B91F9B100A13080 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		64670A022B91F9B100A13080 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		64670A072B91F9B300A13080 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64670A0A2B91F9B300A13080 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64670A0C2B91F9B300A13080 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64670A132B91FC4800A13080 /* products.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = products.json; sourceTree = "<group>"; };
+		64670A1C2B91FD5600A13080 /* ModelProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelProducts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,80 @@
 		646709FD2B91F9B100A13080 /* ValeriyaTest */ = {
 			isa = PBXGroup;
 			children = (
-				646709FE2B91F9B100A13080 /* AppDelegate.swift */,
-				64670A002B91F9B100A13080 /* SceneDelegate.swift */,
-				64670A022B91F9B100A13080 /* ViewController.swift */,
-				64670A042B91F9B100A13080 /* Main.storyboard */,
-				64670A072B91F9B300A13080 /* Assets.xcassets */,
-				64670A092B91F9B300A13080 /* LaunchScreen.storyboard */,
+				64670A122B91FA5200A13080 /* Resousces */,
+				64670A192B91FD0300A13080 /* Extensions */,
+				64670A1A2B91FD0F00A13080 /* Network */,
+				64670A172B91FCEE00A13080 /* Models */,
+				64670A182B91FCF600A13080 /* ViewModels */,
+				64670A162B91FCDE00A13080 /* Controllers */,
+				64670A1B2B91FD1F00A13080 /* Support */,
 				64670A0C2B91F9B300A13080 /* Info.plist */,
 			);
 			path = ValeriyaTest;
+			sourceTree = "<group>";
+		};
+		64670A122B91FA5200A13080 /* Resousces */ = {
+			isa = PBXGroup;
+			children = (
+				646709FE2B91F9B100A13080 /* AppDelegate.swift */,
+				64670A002B91F9B100A13080 /* SceneDelegate.swift */,
+			);
+			path = Resousces;
+			sourceTree = "<group>";
+		};
+		64670A152B91FC8C00A13080 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				64670A132B91FC4800A13080 /* products.json */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		64670A162B91FCDE00A13080 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				64670A022B91F9B100A13080 /* TableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		64670A172B91FCEE00A13080 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				64670A1C2B91FD5600A13080 /* ModelProducts.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		64670A182B91FCF600A13080 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		64670A192B91FD0300A13080 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		64670A1A2B91FD0F00A13080 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		64670A1B2B91FD1F00A13080 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				64670A152B91FC8C00A13080 /* json */,
+				64670A072B91F9B300A13080 /* Assets.xcassets */,
+				64670A092B91F9B300A13080 /* LaunchScreen.storyboard */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +192,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64670A142B91FC4800A13080 /* products.json in Resources */,
 				64670A0B2B91F9B300A13080 /* LaunchScreen.storyboard in Resources */,
 				64670A082B91F9B300A13080 /* Assets.xcassets in Resources */,
-				64670A062B91F9B100A13080 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +205,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64670A032B91F9B100A13080 /* ViewController.swift in Sources */,
+				64670A032B91F9B100A13080 /* TableViewController.swift in Sources */,
 				646709FF2B91F9B100A13080 /* AppDelegate.swift in Sources */,
 				64670A012B91F9B100A13080 /* SceneDelegate.swift in Sources */,
+				64670A1D2B91FD5600A13080 /* ModelProducts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		64670A042B91F9B100A13080 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				64670A052B91F9B100A13080 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		64670A092B91F9B300A13080 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,9 +357,9 @@
 				INFOPLIST_FILE = ValeriyaTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,9 +367,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = valeriya.slesarenko.ValeriyaTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -325,9 +389,9 @@
 				INFOPLIST_FILE = ValeriyaTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,9 +399,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = valeriya.slesarenko.ValeriyaTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
