@@ -22,7 +22,9 @@ final class TableViewController: UIViewController {
 	// MARK: - Content Views
 	private let tableView = ProductTableView()
 	private let informationView = InformationView()
+	
 	private var tapGesture: UITapGestureRecognizer?
+	private var swipeGesture: UISwipeGestureRecognizer?
 	
 	// MARK: - Lifecycle
 	override func viewDidLoad() {
@@ -103,7 +105,7 @@ extension TableViewController {
 		
 		informationView.center = view.center
 		view.addSubview(informationView)
-		addTapGesture()
+		addGestures()
 	}
 	
 	private func updateSortButtonTitle() {
@@ -134,14 +136,41 @@ extension TableViewController: SortButtonDelegate {
 
 // MARK: - Gesture Recognizer Handling Extension
 extension TableViewController {
+	/// Обработка жеста тапа
 	@objc
 	private func handleTap(_ sender: UITapGestureRecognizer) {
 		productViewModel.handleTapGesture(sender, informationView: informationView,
 										  tapGesture: &tapGesture)
 	}
+	
+	/// Обработка жеста свайпа
+	@objc
+	private func handleSwipe(_ sender: UISwipeGestureRecognizer) {
+		if let tapGesture = tapGesture {
+			view.removeGestureRecognizer(tapGesture)
+		}
+		productViewModel.handleSwipe(sender, informationView: informationView,
+									 swipeGesture: &swipeGesture)
+	}
+	
+	/// Добавляем жест тапа
 	private func addTapGesture() {
-		tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
+		tapGesture = UITapGestureRecognizer(target: self,
+											action: #selector(handleTap(_:)))
 		tapGesture?.numberOfTapsRequired = productViewModel.numberOfTaps
 		view.addGestureRecognizer(tapGesture!)
+	}
+	
+	/// Добавляем жест свайпа
+	private func addSwipeGesture() {
+		swipeGesture = UISwipeGestureRecognizer(target: self,
+												action: #selector(handleSwipe(_:)))
+		swipeGesture?.direction = .down
+		view.addGestureRecognizer(swipeGesture!)
+	}
+	
+	private func addGestures() {
+		addTapGesture()
+		addSwipeGesture()
 	}
 }

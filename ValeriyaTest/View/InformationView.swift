@@ -52,7 +52,6 @@ final class InformationView: UIView {
 	private func setupUI() {
 		addSubviews([titleLabel, descriptionLabel, priceLabel])
 		setConstraints()
-		addSwipeGesture()
 		setupAppearance()
 	}
 	
@@ -86,18 +85,5 @@ final class InformationView: UIView {
 		titleLabel.text = viewModel.name
 		descriptionLabel.text = viewModel.description
 		priceLabel.attributedText = viewModel.price
-	}
-	
-	// MARK: - Swipe Gesture
-	
-	private func addSwipeGesture() {
-		let swipeGesture = UISwipeGestureRecognizer(target: self, 
-													action: #selector(handleSwipe))
-		swipeGesture.direction = .down
-		self.addGestureRecognizer(swipeGesture)
-	}
-	
-	@objc private func handleSwipe() {
-		removeFromSuperview()
 	}
 }

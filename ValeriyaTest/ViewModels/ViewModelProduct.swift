@@ -18,7 +18,10 @@ final class ViewModelProduct {
 	private var headerView = TableHeaderView()
 	private var products: [Product]?
 	private let informationView = InformationView()
+	
 	private var tapGesture: UITapGestureRecognizer?
+	private var swipeGesture: UISwipeGestureRecognizer?
+
 	weak var view: UIView?
 	var currentSortingMode: SortingMode = .byPrice
 
@@ -112,12 +115,33 @@ final class ViewModelProduct {
 
 // MARK: - Gesture Recognizer Handling Extension
 extension ViewModelProduct {
-	func handleTapGesture(_ sender: UITapGestureRecognizer, informationView: UIView, tapGesture: inout UITapGestureRecognizer?) {
+	/// Обработка жеста тапа
+	func handleTapGesture(_ sender: UITapGestureRecognizer,
+						  informationView: UIView,
+						  tapGesture: inout UITapGestureRecognizer?) {
+		
 		guard !informationView.frame.contains(sender.location(in: view)) else { return }
+		
 		informationView.removeFromSuperview()
 		if let tapGesture = tapGesture {
 			view?.removeGestureRecognizer(tapGesture)
 			self.tapGesture = nil
+		}
+	}
+	
+	/// Обработка жеста свайпа
+	func handleSwipe(_ gesture: UISwipeGestureRecognizer,
+					 informationView: UIView,
+					 swipeGesture: inout UISwipeGestureRecognizer?) {
+		
+		guard !informationView.frame.contains(gesture.location(in: informationView)) else { return }
+		
+		if gesture.direction == .down {
+			informationView.removeFromSuperview()
+			if let swipeGesture = swipeGesture {
+				informationView.removeGestureRecognizer(swipeGesture)
+				self.swipeGesture = nil
+			}
 		}
 	}
 }
