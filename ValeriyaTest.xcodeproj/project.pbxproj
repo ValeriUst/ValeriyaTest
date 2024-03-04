@@ -14,6 +14,19 @@
 		64670A0B2B91F9B300A13080 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64670A092B91F9B300A13080 /* LaunchScreen.storyboard */; };
 		64670A142B91FC4800A13080 /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = 64670A132B91FC4800A13080 /* products.json */; };
 		64670A1D2B91FD5600A13080 /* ModelProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64670A1C2B91FD5600A13080 /* ModelProducts.swift */; };
+		64670A1F2B91FDE600A13080 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64670A1E2B91FDE600A13080 /* NetworkService.swift */; };
+		64670A232B91FEB100A13080 /* UIView + AddSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64670A222B91FEB100A13080 /* UIView + AddSubview.swift */; };
+		64670A252B91FED700A13080 /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64670A242B91FED700A13080 /* Constans.swift */; };
+		64670A282B91FF5800A13080 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64670A272B91FF5800A13080 /* TableViewCell.swift */; };
+		64670A2B2B92005B00A13080 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 64670A2A2B92005B00A13080 /* SnapKit */; };
+		64670A2D2B92005B00A13080 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 64670A2C2B92005B00A13080 /* SnapKit-Dynamic */; };
+		64670A2F2B9205BE00A13080 /* ViewModelProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64670A2E2B9205BE00A13080 /* ViewModelProduct.swift */; };
+		64670A312B92076400A13080 /* PriceFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64670A302B92076400A13080 /* PriceFormatter.swift */; };
+		64670A332B920A7400A13080 /* TableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64670A322B920A7400A13080 /* TableHeaderView.swift */; };
+		64670A352B922ABB00A13080 /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64670A342B922ABB00A13080 /* InformationView.swift */; };
+		64670A372B923A0600A13080 /* ProductTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64670A362B923A0600A13080 /* ProductTableView.swift */; };
+		647F8C932B92F69600CA815A /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647F8C922B92F69600CA815A /* Builder.swift */; };
+		64B1E1B62B95AAFA006593D2 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B1E1B52B95AAFA006593D2 /* UITableViewCell+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +39,17 @@
 		64670A0C2B91F9B300A13080 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64670A132B91FC4800A13080 /* products.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = products.json; sourceTree = "<group>"; };
 		64670A1C2B91FD5600A13080 /* ModelProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelProducts.swift; sourceTree = "<group>"; };
+		64670A1E2B91FDE600A13080 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		64670A222B91FEB100A13080 /* UIView + AddSubview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + AddSubview.swift"; sourceTree = "<group>"; };
+		64670A242B91FED700A13080 /* Constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
+		64670A272B91FF5800A13080 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		64670A2E2B9205BE00A13080 /* ViewModelProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProduct.swift; sourceTree = "<group>"; };
+		64670A302B92076400A13080 /* PriceFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceFormatter.swift; sourceTree = "<group>"; };
+		64670A322B920A7400A13080 /* TableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeaderView.swift; sourceTree = "<group>"; };
+		64670A342B922ABB00A13080 /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
+		64670A362B923A0600A13080 /* ProductTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableView.swift; sourceTree = "<group>"; };
+		647F8C922B92F69600CA815A /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		64B1E1B52B95AAFA006593D2 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64670A2B2B92005B00A13080 /* SnapKit in Frameworks */,
+				64670A2D2B92005B00A13080 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,11 +84,11 @@
 		646709FD2B91F9B100A13080 /* ValeriyaTest */ = {
 			isa = PBXGroup;
 			children = (
-				64670A122B91FA5200A13080 /* Resousces */,
 				64670A192B91FD0300A13080 /* Extensions */,
 				64670A1A2B91FD0F00A13080 /* Network */,
 				64670A172B91FCEE00A13080 /* Models */,
 				64670A182B91FCF600A13080 /* ViewModels */,
+				64670A262B91FEF400A13080 /* View */,
 				64670A162B91FCDE00A13080 /* Controllers */,
 				64670A1B2B91FD1F00A13080 /* Support */,
 				64670A0C2B91F9B300A13080 /* Info.plist */,
@@ -106,6 +132,7 @@
 		64670A182B91FCF600A13080 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				64670A2E2B9205BE00A13080 /* ViewModelProduct.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -113,6 +140,7 @@
 		64670A192B91FD0300A13080 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				64670A212B91FE9D00A13080 /* UI */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -120,6 +148,7 @@
 		64670A1A2B91FD0F00A13080 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				64670A1E2B91FDE600A13080 /* NetworkService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -127,11 +156,43 @@
 		64670A1B2B91FD1F00A13080 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				647F8C922B92F69600CA815A /* Builder.swift */,
+				64670A122B91FA5200A13080 /* Resousces */,
+				64670A202B91FE9200A13080 /* Constants */,
 				64670A152B91FC8C00A13080 /* json */,
 				64670A072B91F9B300A13080 /* Assets.xcassets */,
 				64670A092B91F9B300A13080 /* LaunchScreen.storyboard */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		64670A202B91FE9200A13080 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				64670A242B91FED700A13080 /* Constans.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		64670A212B91FE9D00A13080 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				64670A222B91FEB100A13080 /* UIView + AddSubview.swift */,
+				64670A302B92076400A13080 /* PriceFormatter.swift */,
+				64B1E1B52B95AAFA006593D2 /* UITableViewCell+Extension.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		64670A262B91FEF400A13080 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				64670A362B923A0600A13080 /* ProductTableView.swift */,
+				64670A272B91FF5800A13080 /* TableViewCell.swift */,
+				64670A322B920A7400A13080 /* TableHeaderView.swift */,
+				64670A342B922ABB00A13080 /* InformationView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +211,10 @@
 			dependencies = (
 			);
 			name = ValeriyaTest;
+			packageProductDependencies = (
+				64670A2A2B92005B00A13080 /* SnapKit */,
+				64670A2C2B92005B00A13080 /* SnapKit-Dynamic */,
+			);
 			productName = ValeriyaTest;
 			productReference = 646709FB2B91F9B100A13080 /* ValeriyaTest.app */;
 			productType = "com.apple.product-type.application";
@@ -178,6 +243,9 @@
 				Base,
 			);
 			mainGroup = 646709F22B91F9B100A13080;
+			packageReferences = (
+				64670A292B92005B00A13080 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 646709FC2B91F9B100A13080 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -205,9 +273,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64670A1F2B91FDE600A13080 /* NetworkService.swift in Sources */,
+				64670A352B922ABB00A13080 /* InformationView.swift in Sources */,
+				64670A332B920A7400A13080 /* TableHeaderView.swift in Sources */,
+				64670A282B91FF5800A13080 /* TableViewCell.swift in Sources */,
+				64670A232B91FEB100A13080 /* UIView + AddSubview.swift in Sources */,
 				64670A032B91F9B100A13080 /* TableViewController.swift in Sources */,
 				646709FF2B91F9B100A13080 /* AppDelegate.swift in Sources */,
+				64670A312B92076400A13080 /* PriceFormatter.swift in Sources */,
+				64670A2F2B9205BE00A13080 /* ViewModelProduct.swift in Sources */,
+				647F8C932B92F69600CA815A /* Builder.swift in Sources */,
+				64B1E1B62B95AAFA006593D2 /* UITableViewCell+Extension.swift in Sources */,
 				64670A012B91F9B100A13080 /* SceneDelegate.swift in Sources */,
+				64670A372B923A0600A13080 /* ProductTableView.swift in Sources */,
+				64670A252B91FED700A13080 /* Constans.swift in Sources */,
 				64670A1D2B91FD5600A13080 /* ModelProducts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +510,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		64670A292B92005B00A13080 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		64670A2A2B92005B00A13080 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 64670A292B92005B00A13080 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		64670A2C2B92005B00A13080 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 64670A292B92005B00A13080 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 646709F32B91F9B100A13080 /* Project object */;
 }

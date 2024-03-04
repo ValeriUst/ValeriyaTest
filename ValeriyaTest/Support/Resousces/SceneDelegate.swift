@@ -12,11 +12,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 	
 	func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
 		guard let windowScene = (scene as? UIWindowScene) else { return }
-		window = UIWindow(windowScene: windowScene)
-		window?.windowScene = windowScene
-		let vc = TableViewController()
-		let navigationController = UINavigationController(rootViewController: vc)
-		window?.rootViewController = navigationController
-		window?.makeKeyAndVisible()
+		let window = UIWindow(windowScene: windowScene)
+		let product = Product(id: "1", name: "Product Name", description: "Product Description", price: 0)
+		let navigationController = Builder.build(product: product)
+		window.rootViewController = navigationController
+		window.makeKeyAndVisible()
+		self.window = window
 	}
 }
