@@ -18,13 +18,12 @@ final class TableViewController: UIViewController {
 	// MARK: - Properties
 	private let productViewModel: ViewModelProduct
 	private var headerView = TableHeaderView()
+	private var tapGesture: UITapGestureRecognizer?
+	private var swipeGesture: UISwipeGestureRecognizer?
 	
 	// MARK: - Content Views
 	private let tableView = ProductTableView()
 	private let informationView = InformationView()
-	
-	private var tapGesture: UITapGestureRecognizer?
-	private var swipeGesture: UISwipeGestureRecognizer?
 	
 	// MARK: - Lifecycle
 	override func viewDidLoad() {
